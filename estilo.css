@@ -1,0 +1,58 @@
+body {
+    background-image: linear-gradient(#121212, #868686, #121212);
+    margin: 0px;
+}
+
+.cont-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+.nav-item {
+    padding: 14px;
+}
+.nav-item a {
+    text-decoration: none;
+    
+}
+
+.inicio {
+    height: 100vh;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.sobremi{
+    height: 100vh;
+    padding: 10px;
+    color: #cccccc;
+
+}
+
+.habilidades{
+    height: 100vh;
+    padding: 10px;
+
+}
+
+.portfolio{
+    height: 100vh;
+    padding: 10px;
+    color: #cccccc;
+
+}
+
+.redes{
+    height: 50vh;
+    padding: 10px;
+    color: #ffffff;
+
+}
