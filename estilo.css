@@ -666,6 +666,8 @@ footer {
     .formacion h5 {
         font-size: 17px;
     }
+
+    /* formacion */
     .tecno {
         justify-content: center;
     }
@@ -701,7 +703,47 @@ footer {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    
+    /* proyecto */
+    .cardproyecto {
+        text-align: center;
+    }
+    .card-tit{
+        padding-top: 15px;
+    }
+    .img-card {
+        text-align: center;
+        transform: translateY(20%);
+    }
+    .img-card img{
+        height: 100px;
+        width: 150px;
+    }
 
+    /* formacion */
+    
+    .tecno div {
+        padding: 15px;
+    }
+    .tecno div h1 {
+        font-size: 25px;
+        line-height: 140px;
+        width: 140px;
+        text-align: center;
+    }
+
+    .circulo{
+        height: 140px;
+        width: 140px;
+    }
+
+    .circulo-dis{
+        height: 140px;
+        width: 140px;
+    }
+
+}
 
 /* 
 body {
