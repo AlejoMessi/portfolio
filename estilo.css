@@ -45,6 +45,9 @@ body {
 } */
 
 /* presentación */
+.present-responsive {
+    display:none;
+}
 header {
    padding-left: 30px;
    height: 100%;
@@ -121,8 +124,8 @@ header {
 
 /* redes */
 .redes {
-    padding-left: 80px;
     display: flex;
+    padding-top: 50px;
 }
 .redes li{
     padding: 15px;
@@ -155,6 +158,7 @@ main {
 /* experienca */
 
 .experiencia {
+    scroll-margin-top: 100px;
     margin-top: 100px;
 }
 
@@ -213,12 +217,13 @@ main {
 .cv a:hover{
     color: var(--color-detalle);
     border-bottom: 1px solid var(--color-detalle);
-    transition: 2s;
+    transition: 1s;
 }
 
 /* proyectos */
 
 .proyectos {
+    scroll-margin-top: 100px;
     margin-top: 100px;
 }
 
@@ -228,6 +233,7 @@ main {
 .cardproyecto {
     background-color: transparent;
     border: none;
+    max-width: 540px;
 
 }
 .cardproyecto:hover {
@@ -246,9 +252,10 @@ main {
 
 /* formacion */
 .formacion{
-    padding: 50px 0;
+    scroll-margin-top: 100px;
+    margin-top: 100px;
 }
-.formacion h3 {
+.formacion h5 {
     padding: 30px;
     font-size: 12px;
 }
@@ -423,6 +430,9 @@ footer {
         padding: 10px;
     }
     .formacion h3 {
+        font-size: 25px;
+    }
+    .formacion h5 {
         padding: 20px;
         font-size: 10px;
     }
@@ -443,8 +453,254 @@ footer {
     }
 
     /* footer */
+    footer {
     font-size: 15px;
+    }
 }
+
+@media only screen and (max-width: 1000px) {
+    
+    body {
+        display: inline-block;
+        /* justify-content: space-between; */
+    }
+
+
+    /* presentación */
+    
+    header {
+        display: flex;
+        padding-left: 0;
+        position: relative;
+        justify-content: center;
+    }
+    .presentacion {
+        display: none;  
+    }
+    .present-responsive {
+        display: inline-block;        
+    }
+    
+    .tarjeta {
+        display: none;
+    }
+    
+    .tarjeta-responsive {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .card-resp {
+        text-align: center;
+    }
+    .nombre {
+        font-size: 55px;
+        font-family: 'Abril Fatface', cursive;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+    .presentacion p {
+        font-size: 15px;
+        color: var(--color-secundarioo);
+    }
+
+
+    /* navegador */
+    .nav-responsive {
+        padding-top: 50px;
+        font-family: 'Passion One', cursive;
+    }
+    .nav-responsive ul {
+        list-style-type: none;
+    }
+    .menu-resp {
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-resp li a {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        padding: 16px;
+        display: inline-block;
+        flex-direction: column;
+        text-decoration: none;
+        color: var(--color-primario);
+    }
+    .menu-resp li a:hover {
+        color: var(--color-acento);
+    }
+    .menu-resp li a{
+        align-items: center;
+    }
+
+    .nav-indicator{
+        height: 1px;
+        width: 20px;
+        background-color: var(--color-secundarioo);
+        margin: 0 10px 0 0;
+        transition: 1s;
+    }
+
+    /* redes */
+    .redes {
+        padding-left: 80px;
+        display: flex;
+    }
+    .redes li{
+        padding: 15px;
+        list-style-type: none;
+    }
+    .redes li a{
+        text-decoration: none;
+    }
+
+    .redes li a svg {
+        height: 30px;
+    }
+
+    /* Derecha */
+    main {
+        width: 100%;
+        padding: 100px 50px 0 50px;
+    }
+
+    /* sobre mi */
+
+    .sobremi h3 {
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+    }
+    .sobremi div{
+        font-size: 25px;
+    }
+
+    /* experienca */
+
+    .experiencia {
+        margin-top: 100px;
+    }
+    .experiencia div h3 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .trabajo1 {
+        margin-top: 20px;
+    }
+    
+    .info a{
+        font-size: 25px;
+    }
+    
+    .fecha {
+        text-align: center;
+    }
+    .fecha h3{
+        font-size: 20px;
+        margin: 0px;
+    }
+    
+    .tit {
+        font-size: 30px;
+    }
+    .info h6 {
+        font-size: 25px;
+    }
+    .info{
+        width: 70%;
+        margin: 15px 15px 15px 0;
+    }
+
+    .info p {
+        font-size: 25px;
+    }
+
+    .cv {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .cv a{
+        font-size: 25px;
+    }
+  
+    /* proyectos */
+
+    .proyectos {
+        margin-top: 100px;
+
+    }
+    .proyectos h3 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cardproyecto {
+        max-width: 700px;
+        margin: 20px 0;
+    }
+
+    .card-tit {
+        font-size: 30px;
+    }
+    .subtit-card {
+        font-size: 25px;
+    }
+    .subtit2-card {
+        font-size: 20px;
+    }
+
+
+    /* formacion */
+    .formacion{
+        padding: 50px 0;
+    }
+    .formacion h3 {
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .formacion h5 {
+        font-size: 17px;
+    }
+    .tecno {
+        justify-content: center;
+    }
+
+    .tecno div {
+        padding: 15px;
+    }
+    .tecno div h1 {
+        font-size: 25px;
+        line-height: 170px;
+        width: 170px;
+        text-align: center;
+    }
+
+    .circulo{
+        height: 170px;
+        width: 170px;
+    }
+
+    .circulo-dis{
+        height: 170px;
+        width: 170px;
+    }
+
+
+
+    /* footer */
+
+    footer {
+        
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
 
 
 /* 
