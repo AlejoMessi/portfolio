@@ -704,7 +704,14 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    
+    /* cursor */
+    .cursor { 
+        display: none;
+    }    
+    /* nav */
+    .menu-resp li a {
+        font-size: 20px;
+    }
     /* proyecto */
     .cardproyecto {
         text-align: center;
