@@ -45,9 +45,7 @@ body {
 } */
 
 /* presentación */
-.present-responsive {
-    display:none;
-}
+
 header {
    padding-left: 30px;
    height: 100%;
@@ -470,96 +468,74 @@ footer {
     
     header {
         display: flex;
-        padding-left: 0;
         position: relative;
-        justify-content: center;
+        text-align: center;
     }
     .presentacion {
-        display: none;  
-    }
-    .present-responsive {
-        display: inline-block;        
-    }
-    
-    .tarjeta {
-        display: none;
-    }
-    
-    .tarjeta-responsive {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        
-    }
-    .card-resp {
-        text-align: center;
+        margin-left: -80px;
     }
     .nombre {
-        font-size: 55px;
-        font-family: 'Abril Fatface', cursive;
+        font-size: 45px;
     }
     .titulo {
-        font-size: 25px;
+        font-size: 30px;
     }
     .presentacion p {
-        font-size: 15px;
-        color: var(--color-secundarioo);
+        font-size: 20px;
     }
 
+    /* nav */
 
-    /* navegador */
-    .nav-responsive {
-        padding-top: 50px;
-        font-family: 'Passion One', cursive;
+    .nav {
+        padding: 50px 0 ;   
+        position: absolute;
+        transform: translateY(150px);
     }
-    .nav-responsive ul {
+    .nav ul {
         list-style-type: none;
-    }
-    .menu-resp {
         display: flex;
-        justify-content: space-around;
+        text-align: center;
+        width: 500px;
     }
-    .menu-resp li a {
-        font-size: 30px;
-        letter-spacing: 1.5px;
-        padding: 16px;
-        display: inline-block;
-        flex-direction: column;
-        text-decoration: none;
-        color: var(--color-primario);
+    
+    .menu li a {
+        font-size: 20px;
+        display: flex;
+        padding: 25px;
     }
-    .menu-resp li a:hover {
+   
+    .active span{
         color: var(--color-acento);
     }
-    .menu-resp li a{
-        align-items: center;
+    .active .nav-indicator{
+        height: 1px;
+        width: 50px;
+        background-color: var(--color-acento);
+        margin: 0 10px 0 0;
+        color: var(--color-acento);
+        transition: 1s;
     }
-
+    
     .nav-indicator{
         height: 1px;
         width: 20px;
         background-color: var(--color-secundarioo);
         margin: 0 10px 0 0;
         transition: 1s;
+        display: none;
     }
+    
 
     /* redes */
     .redes {
-        padding-left: 80px;
         display: flex;
+        justify-content: center;
     }
     .redes li{
         padding: 15px;
         list-style-type: none;
     }
-    .redes li a{
-        text-decoration: none;
-    }
-
-    .redes li a svg {
-        height: 30px;
-    }
-
+   
     /* Derecha */
     main {
         width: 100%;
@@ -692,8 +668,6 @@ footer {
         width: 170px;
     }
 
-
-
     /* footer */
 
     footer {
@@ -712,6 +686,7 @@ footer {
     .menu-resp li a {
         font-size: 20px;
     }
+    
     /* proyecto */
     .cardproyecto {
         text-align: center;
