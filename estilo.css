@@ -133,6 +133,10 @@ header {
     text-decoration: none;
 }
 
+.redes li a svg {
+    height: 30px;
+}
+
  
 
 /* Derecha */
