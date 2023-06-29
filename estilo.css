@@ -484,7 +484,7 @@ footer {
         position: relative;
     }
     .presentacion {
-        padding-left: 7%;
+        padding-left: 10%;
     }
     .nombre {
         font-size: 35px;
@@ -744,7 +744,9 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
-
+    .presentacion {
+        margin-left: -80px;
+    }
     .nombre {
         font-size: 30px;
     }
@@ -753,6 +755,7 @@ footer {
     }
     .presentacion p {
         font-size: 15px;
+        width: 300px;
     }
 
 }
