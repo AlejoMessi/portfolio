@@ -133,9 +133,7 @@ header {
     text-decoration: none;
 }
 
-.redes li a svg {
-    height: 30px;
-}
+ 
 
 /* Derecha */
 main {
@@ -482,7 +480,7 @@ footer {
         position: relative;
     }
     .presentacion {
-        padding-left: 10%;
+        padding-left: 7%;
     }
     .nombre {
         font-size: 35px;
@@ -695,13 +693,7 @@ footer {
 @media only screen and (max-width: 800px) {
    
     /* presentacion */
-    .presentacion {
-        margin-left: -30px;
-    }
-   /* .presentacion p {
-    display: inline-block;
-    margin-left: 0px;
-   } */
+
     /* nav */
     .menu-resp li a {
         font-size: 20px;
@@ -743,6 +735,20 @@ footer {
     .circulo-dis{
         height: 140px;
         width: 140px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .nombre {
+        font-size: 30px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .presentacion p {
+        font-size: 15px;
     }
 
 }
