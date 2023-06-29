@@ -340,13 +340,16 @@ footer {
    
     /* presentacion */
     .nombre {
-        font-size: 35px;
+        font-size: 50px;
     }
     .titulo {
-        font-size: 15px;
+        font-size: 40px;
+    }
+    .presentacion {
+        margin-top: 100px;
     }
     .presentacion p {
-        font-size: 12px;
+        font-size: 30px;
         padding-right: 100px;
     }
     
@@ -362,6 +365,10 @@ footer {
         font-size: 12px;
     }
     
+    /* redes */
+    .redes {
+        margin-top: 100px;
+    }
 
     /* derecha */
 
@@ -476,15 +483,15 @@ footer {
         text-align: center;
     }
     .nombre {
-        font-size: 45px;
+        font-size: 50px;
     }
     .titulo {
-        font-size: 30px;
+        font-size: 40px;
     }
     .presentacion p {
         margin-left: 100px;
-        font-size: 20px;
-        min-width: 400px;
+        font-size: 30px;
+        min-width: 600px;
     }
 
     /* nav */
