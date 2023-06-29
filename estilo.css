@@ -321,41 +321,42 @@ footer {
 
 @media only screen and (max-width: 1330px) {
     
-    .nombre {
-        font-size: 40px;
-    }
-    .titulo {
-        font-size: 20px;
-    }
-    .presentacion {
-        padding: 100px;
-    }
-    .presentacion p {
-        font-size: 13px;
-    }
-    
-}
-
-@media only screen and (max-width: 1200px) {
-   
-    /* presentacion */
-    .nombre {
+    /* .nombre {
         font-size: 50px;
     }
     .titulo {
         font-size: 40px;
-    }
+    } */
+    /* .presentacion {
+        padding: 100px;
+    } */
+    /* .presentacion p {
+        font-size: 20px;
+    } */
+    
+}
+
+@media only screen and (max-width: 1250px) {
+   
+    /* presentacion */
     .presentacion {
-        margin-top: 100px;
+        padding-top: 90px;
     }
-    .presentacion p {
+    .nombre {
+        font-size: 40px;
+    }
+    .titulo {
         font-size: 30px;
+    }
+    
+    .presentacion p {
+        font-size: 20px;
         padding-right: 100px;
     }
     
     /* nav */
     .nav {
-        padding-top: 80px;        
+        padding-top: 50px;        
     }
     .nav ul {
         list-style-type: none;
@@ -366,9 +367,6 @@ footer {
     }
     
     /* redes */
-    .redes {
-        margin-top: 100px;
-    }
 
     /* derecha */
 
@@ -466,32 +464,35 @@ footer {
 @media only screen and (max-width: 1000px) {
     
     body {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         /* justify-content: space-between; */
     }
 
+     /* cursor */
+    .cursor { 
+        display: none;
+    }    
 
     /* presentación */
     
     header {
         display: flex;
         position: relative;
-        text-align: center;
-
     }
     .presentacion {
-        text-align: center;
+        padding-left: 10%;
     }
     .nombre {
-        font-size: 50px;
+        font-size: 35px;
     }
     .titulo {
-        font-size: 40px;
+        font-size: 25px;
     }
     .presentacion p {
         margin-left: 100px;
-        font-size: 30px;
-        min-width: 600px;
+        font-size: 20px;
     }
 
     /* nav */
@@ -551,7 +552,9 @@ footer {
     /* Derecha */
     main {
         width: 100%;
-        padding: 100px 50px 0 50px;
+        padding: 100px 20px 0 20px;
+        text-align: center;
+        
     }
 
     /* sobre mi */
@@ -690,10 +693,15 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    /* cursor */
-    .cursor { 
-        display: none;
-    }    
+   
+    /* presentacion */
+    .presentacion {
+        margin-left: -30px;
+    }
+   /* .presentacion p {
+    display: inline-block;
+    margin-left: 0px;
+   } */
     /* nav */
     .menu-resp li a {
         font-size: 20px;
