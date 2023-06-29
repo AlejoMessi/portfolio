@@ -463,99 +463,73 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    
+    @media only screen and (max-width: 1000px) {
+        
+        
     body {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        /* justify-content: space-between; */
+        justify-content:center;
     }
 
-     /* cursor */
-    .cursor { 
-        display: none;
-    }    
+    /* cursor */
+    .cursor {
+        display: none;          
+    }
+
 
     /* presentación */
-    
+
     header {
-        display: flex;
-        position: relative;
+    padding-left: 0;
+    top: 0;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primario);
+    text-align: center;
     }
     .presentacion {
-        padding-left: 10%;
+        padding: 100px 0 0 0;
     }
     .nombre {
-        font-size: 35px;
+        font-size: 55px;
+        font-family: 'Abril Fatface', cursive;
     }
     .titulo {
         font-size: 25px;
     }
     .presentacion p {
-        margin-left: 100px;
-        font-size: 20px;
+        font-size: 15px;
+        padding-right: 0;
+
     }
 
-    /* nav */
+    /* navegador */
     .nav {
         display: none;
+        
     }
-    /* 
-    .nav {
-        padding: 50px 0 ;   
-        transform: translateY(250px);
-    }
-    .nav ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        box-sizing: content-box;
-    }
-    
-    .menu li a {
-        font-size: 20px;
-        display: flex;
-        padding: 25px;
-    }
-   
-    .active span{
-        color: var(--color-acento);
-    }
-    .active .nav-indicator{
-        height: 1px;
-        width: 50px;
-        background-color: var(--color-acento);
-        margin: 0 10px 0 0;
-        color: var(--color-acento);
-        transition: 1s;
-    }
-    
-    .nav-indicator{
-        height: 1px;
-        width: 20px;
-        background-color: var(--color-secundarioo);
-        margin: 0 10px 0 0;
-        transition: 1s;
-        display: none;
-    }
-     */
 
     /* redes */
     .redes {
         display: flex;
+        padding-top: 50px;
         justify-content: center;
     }
     .redes li{
         padding: 15px;
         list-style-type: none;
     }
-   
+
+    .redes li a svg {
+        height: 30px;
+    }
+
+
     /* Derecha */
     main {
         width: 100%;
-        padding: 100px 20px 0 20px;
-        text-align: center;
+        padding: 100px 30px 0 30px;
         
     }
 
@@ -649,7 +623,7 @@ footer {
 
     /* formacion */
     .formacion{
-        padding: 50px 0;
+        padding: 0;
     }
     .formacion h3 {
         padding: 30px;
@@ -697,17 +671,13 @@ footer {
 @media only screen and (max-width: 800px) {
    
     /* presentacion */
-
-    /* nav */
-    .menu-resp li a {
-        font-size: 20px;
-    }
     
     /* proyecto */
     .cardproyecto {
         text-align: center;
     }
     .card-tit{
+        text-align: center;
         padding-top: 15px;
     }
     .img-card {
@@ -743,22 +713,103 @@ footer {
 
 }
 
-@media only screen and (max-width: 400px) {
-    .presentacion {
-        margin-left: -80px;
-    }
-    .nombre {
-        font-size: 30px;
-    }
-    .titulo {
-        font-size: 20px;
-    }
-    .presentacion p {
-        font-size: 15px;
-        width: 300px;
+@media only screen and (max-width: 600px) {
+    
+    /* experiencia */
+    .experiencia div h3 {
+        text-align: center;
+        padding: 20px;
     }
 
-}
+    .trabajo1 {
+        margin-top: 20px;
+    }
+    
+    .info a{
+        font-size: 15px;
+    }
+    
+    .fecha {
+        text-align: center;
+    }
+    .fecha h3{
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    .tit {
+        font-size: 20px;
+    }
+    .info h6 {
+        font-size: 15px;
+    }
+    .info{
+        width: 70%;
+        margin: 15px 15px 15px 0;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+    .cv a{
+        font-size: 20px;
+    }
+    
+    /* proyectos */
+
+    .card-tit {
+        font-size: 20px;
+    }
+    .subtit-card {
+        font-size: 15px;
+    }
+    .subtit2-card {
+        font-size: 13px;
+    }
+
+
+    /* formacion */
+
+    .formacion h3 {
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .formacion h5 {
+        font-size: 17px;
+    }
+
+    /* formacion */
+    .tecno {
+        justify-content: center;
+    }
+
+    .tecno div {
+        padding: 15px;
+    }
+    .tecno div h1 {
+        font-size: 20px;
+        line-height: 140px;
+        width: 140px;
+        text-align: center;
+    }
+
+    .circulo{
+        height: 140px;
+        width: 140px;
+    }
+
+    .circulo-dis{
+        height: 140px;
+        width: 140px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 20px;
+    }
+} 
 
 /* 
 body {
